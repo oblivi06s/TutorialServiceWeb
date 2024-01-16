@@ -1,0 +1,330 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 12pt;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    margin-top: 5px;
+}
+.header img{
+    width: 8%;
+    height: 8%;
+}
+.header p{
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 22pt;
+    margin-top: 15px;
+    padding-top: 4px;
+}
+.header #logoutButton{
+    width: 70px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 3em;
+    margin-top: 2em;
+    padding-top: 8px;
+    background-color: white;
+    color: black;
+    font-size: 10pt;
+}
+.header #logoutButton:hover{
+    text-decoration: underline;
+    background-color: #45a049;
+    color: white;
+
+}
+
+
+.greetings{
+    text-align: center;
+    background-color: #f1f0f0;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 30pt;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8em;
+    margin-left: 15em;
+    transition: margin-left 0.5s;
+}
+
+.login-container,
+.registration-container {
+    padding: 20px;
+    width: 250px;
+    margin: 2em;
+}
+
+.login-container h1,
+.login-container p,
+.registration-container h1,
+.registration-container p{
+    font-family: 'Rubik Mono One', monospace;
+    text-align: center;
+}
+
+#registrationForm input,
+#loginForm input{
+    border: 1px solid #5a97a4;
+    border-radius: 12px;
+    background-color: #f1f0f0;
+}
+
+.role-container label {
+    display: inline-block; /* or use inline */
+    margin-right: 0.2em; /* Adjust as needed for spacing */
+}
+.role-container input[type="radio"] {
+    display: inline-block;
+    margin-left: 0.2em;
+    padding-left: 0.1em;
+    margin-right: 2.5em;
+    width: 2em;
+}
+
+.registration-container h4{
+    font-family: 'Rubik Mono One', monospace;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 268px;
+    margin-bottom: 0.6em;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-buttons button {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+#registrationForm button{
+    margin-top: 1.8em;
+}
+
+#studentsPopup .popup-content button,
+#tutorsPopup .popup-content button,
+#assignmentPopup .popup-content #removeButton,
+#tutorialRequests .popup-content button{
+    width: 70px;
+    background-color: white;
+    color: black;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    font-size: 10pt;
+    margin: 0.1px;
+    text-align: center;
+
+}
+#studentsPopup .popup-content button:hover,
+#tutorsPopup .popup-content button:hover,
+#assignmentPopup .popup-content #removeButton:hover,
+#tutorialRequests .popup-content button:hover{
+    background-color: #45a049;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#assignmentPopup .popup-content #assignButton{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+.error-message {
+    color: red;
+}
+.image-container {
+    margin-left: 50px;
+}
+img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+.swap {
+    margin-left: -1000px !important; /* Apply the necessary negative margin */
+}
+
+.dashboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.5em;
+    margin-left: 10px;
+}
+.dashboard-section {
+    border: 2px black solid;
+    padding: 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 40px;
+    box-shadow: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 11.8em;
+    height: 12.8em;
+}
+.circles{
+    border: 2px black solid;
+    height: 8px;
+    width: 8px;
+    padding: 20px;
+    border-radius: 50%; 
+    margin-bottom: 5px;   
+}
+.tiles h3{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.descriptions p{
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+
+.dashboard-section input[type="date"] {
+    margin-left: 0.5em;
+    width: 250px;
+}
+.dashboard-section:hover {
+    background-color: #e0e0e0;
+}
+.dashboard-section.expanded {
+    height: 200px; /* Adjust the height as needed */
+}
+tr > td , tr > th{
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.close {
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.Courses label{
+    display: inline-block;
+    width: 6em;
+    margin-left: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.Courses input[type="radio"]{
+    margin-left: 0.5em;
+    width: 2em;
+}
+.popup-content label{
+    display: inline-block;
+    width: 6em;
+    margin-left: 0.7em;
+    margin-bottom: 0.5em;
+    height: 1em;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="time"],
+.popup-content input[type="date"],
+.popup-content input[type="number"],
+.popup-content input[type="password"]{
+    width: 250px;
+    margin-left: 1.8em;
+    height: 1em;
+}
+
+#assignmentPopup .popup-content{
+    width: 97%;
+    font-size: 10pt;
+}
+
+h1{
+    font-family: 'Rubik Mono One', monospace;
+    text-align: center;
+}
+
+
+
+
+
